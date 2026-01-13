@@ -206,6 +206,15 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-echo "venv/" >> .gitignore
-echo ".ipynb_checkpoints/" >> .gitignore
-echo "__pycache__/" >> .gitignore
+# --- FRM Study Specifics ---
+# Ignore Bionic Turtle PDF materials (Copyright/Size)
+*.pdf
+
+# Ignore large data downloads (keep your repo lean)
+*.csv
+*.xlsx
+!data/example_data.csv
+
+# Local Environment
+venv/
+.env
